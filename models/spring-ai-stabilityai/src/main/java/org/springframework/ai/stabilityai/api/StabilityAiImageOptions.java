@@ -371,6 +371,7 @@ public class StabilityAiImageOptions implements ImageOptions {
 		return n;
 	}
 
+	@Override
 	public void setN(Integer n) {
 		this.n = n;
 	}
@@ -380,6 +381,7 @@ public class StabilityAiImageOptions implements ImageOptions {
 		return model;
 	}
 
+	@Override
 	public void setModel(String model) {
 		this.model = model;
 	}
@@ -389,6 +391,7 @@ public class StabilityAiImageOptions implements ImageOptions {
 		return width;
 	}
 
+	@Override
 	public void setWidth(Integer width) {
 		this.width = width;
 	}
@@ -398,6 +401,7 @@ public class StabilityAiImageOptions implements ImageOptions {
 		return height;
 	}
 
+	@Override
 	public void setHeight(Integer height) {
 		this.height = height;
 	}
@@ -407,6 +411,7 @@ public class StabilityAiImageOptions implements ImageOptions {
 		return responseFormat;
 	}
 
+	@Override
 	public void setResponseFormat(String responseFormat) {
 		this.responseFormat = responseFormat;
 	}

@@ -26,12 +26,22 @@ public interface ImageOptions extends ModelOptions {
 
 	Integer getN();
 
+	void setN(Integer n);
+
 	String getModel();
+
+	void setModel(String model);
 
 	Integer getWidth();
 
+	void setWidth(Integer width);
+
 	Integer getHeight();
 
+	void setHeight(Integer height);
+
 	String getResponseFormat(); // openai - url or base64 : stability ai byte[] or base64
+
+	void setResponseFormat(String responseFormat);
 
 }

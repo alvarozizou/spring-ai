@@ -35,6 +35,7 @@ public class ImageOptionsBuilder {
 			return n;
 		}
 
+		@Override
 		public void setN(Integer n) {
 			this.n = n;
 		}
@@ -44,6 +45,7 @@ public class ImageOptionsBuilder {
 			return model;
 		}
 
+		@Override
 		public void setModel(String model) {
 			this.model = model;
 		}
@@ -53,6 +55,7 @@ public class ImageOptionsBuilder {
 			return responseFormat;
 		}
 
+		@Override
 		public void setResponseFormat(String responseFormat) {
 			this.responseFormat = responseFormat;
 		}
@@ -62,6 +65,7 @@ public class ImageOptionsBuilder {
 			return width;
 		}
 
+		@Override
 		public void setWidth(Integer width) {
 			this.width = width;
 		}
@@ -71,6 +75,7 @@ public class ImageOptionsBuilder {
 			return height;
 		}
 
+		@Override
 		public void setHeight(Integer height) {
 			this.height = height;
 		}

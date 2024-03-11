@@ -159,6 +159,7 @@ public class OpenAiImageOptions implements ImageOptions {
 		return this.n;
 	}
 
+	@Override
 	public void setN(Integer n) {
 		this.n = n;
 	}
@@ -168,6 +169,7 @@ public class OpenAiImageOptions implements ImageOptions {
 		return this.model;
 	}
 
+	@Override
 	public void setModel(String model) {
 		this.model = model;
 	}
@@ -185,6 +187,7 @@ public class OpenAiImageOptions implements ImageOptions {
 		return responseFormat;
 	}
 
+	@Override
 	public void setResponseFormat(String responseFormat) {
 		this.responseFormat = responseFormat;
 	}
@@ -194,9 +197,9 @@ public class OpenAiImageOptions implements ImageOptions {
 		return this.width;
 	}
 
+	@Override
 	public void setWidth(Integer width) {
 		this.width = width;
-		this.size = this.width + "x" + this.height;
 	}
 
 	@Override
@@ -204,9 +207,9 @@ public class OpenAiImageOptions implements ImageOptions {
 		return this.height;
 	}
 
+	@Override
 	public void setHeight(Integer height) {
 		this.height = height;
-		this.size = this.width + "x" + this.height;
 	}
 
 	public String getStyle() {
@@ -230,10 +233,13 @@ public class OpenAiImageOptions implements ImageOptions {
 	}
 
 	public String getSize() {
-
 		if (this.size != null) {
 			return this.size;
 		}
+		return getSizeWithWidthHeight();
+	}
+
+	private String getSizeWithWidthHeight() {
 		return (this.width != null && this.height != null) ? this.width + "x" + this.height : null;
 	}
 
